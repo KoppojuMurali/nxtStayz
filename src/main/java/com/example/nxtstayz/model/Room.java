@@ -21,7 +21,7 @@ public class Room {
     @Column(name = "id")
     private int roomId;
     @Column(name = "roomnumber")
-    private String roomNumber;
+    private String roomName;
     @Column(name = "type")
     private String type;
     @Column(name = "price")
@@ -45,8 +45,8 @@ public class Room {
         return roomNumber;
     }
 
-    public void setRoomNumber(String roomNumber) {
-        this.roomNumber = roomNumber;
+    public void setRoomNumber(String roomName) {
+        this.roomName = roomName;
     }
 
     public String getRoomType() {
