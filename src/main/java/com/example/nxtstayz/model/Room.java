@@ -8,6 +8,7 @@
 
 // Write your code here
 
+
 package com.example.nxtstayz.model;
 
 import javax.persistence.*;
@@ -22,7 +23,7 @@ public class Room {
     @Column(name = "roomnumber")
     private String roomNumber;
     @Column(name = "type")
-    private String roomType;
+    private String type;
     @Column(name = "price")
     private double price;
     @ManyToOne
@@ -49,11 +50,11 @@ public class Room {
     }
 
     public String getRoomType() {
-        return roomType;
+        return type;
     }
 
     public void setRoomType(String roomType) {
-        this.roomType = roomType;
+        this.type = roomType;
     }
 
     public double getPrice() {
